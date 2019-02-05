@@ -16,3 +16,14 @@ input[type="checkbox"]:invalid + label::before {
   background-color: #fee;
   color: #c33;
 }
+
+.error-message-highlighted {
+  background-color: #c33;
+  color: #fff;
+}
+
+.error-message:first-child,
+input:invalid + .error-message,
+input:invalid + label + .error-message {
+  display: block;
+}
